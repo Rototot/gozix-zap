@@ -6,6 +6,7 @@ require (
 	github.com/gozix/di v1.0.0
 	github.com/gozix/glue/v3 v3.0.0
 	github.com/gozix/viper/v3 v3.0.0
+	github.com/pkg/errors v0.9.1
 	github.com/spf13/viper v1.15.0
 	go.uber.org/zap v1.24.0
 )

@@ -53,6 +53,7 @@ func (b *Bundle) Build(builder di.Builder) (err error) {
 	return builder.Apply(
 		di.Provide(b.provideZapLogger, di.Constraint(1, withCoreFactory())),
 		di.Provide(b.provideCoreFactory, AsCoreFactory()),
+		di.Provide(NewGelfStreamZapFactory, AsCoreFactory()),
 	)
 }
 
